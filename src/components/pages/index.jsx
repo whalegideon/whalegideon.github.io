@@ -2,6 +2,56 @@ import React from 'react'
 import { PROJECT_BOULE_PATH, PROJECT_SOUL_PATH, PROJECT_STRIDE_PATH, SOCIAL_FACEBOOK_PATH, SOCIAL_GITHUB_PATH, SOCIAL_LINKEDIN_PATH } from '../../config/path'
 import ImageBanner from '../sections/ImageBanner'
 
+export const DiagonalLinesIcon = () => {
+  return (
+    <svg
+      className="w-6 h-6 ms-3 -me-0.5"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M19.763 0l-.373 1.297h2.594L22.354 0h-2.591zM16.192 2.27l-.376 1.298h5.52l.37-1.298h-5.514zM12.897 4.54l-.376 1.298h8.166l.37-1.298h-8.16zM2.85 6.81l-.377 1.298h17.565l.37-1.297H2.848zM3.884 9.081l-.376 1.297H19.39l.37-1.297H3.882zM4.088 24l.376-1.297H1.866L1.5 24h2.588zM7.662 21.73l.376-1.297H2.515L2.15 21.73h5.513zM10.957 19.459l.376-1.297h-8.17l-.366 1.297h8.16zM21.005 17.189l.376-1.297H3.812l-.366 1.297h17.559zM19.967 14.919l.376-1.297H4.461l-.366 1.297h15.872zM18.786 12.649l.376-1.297H4.26l-.366 1.297h14.893z"
+        fill="url(#lobe-icons-upsate-_R_0_)"
+      />
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="lobe-icons-upsate-_R_0_"
+          x1="11.927"
+          x2="11.927"
+          y2="24"
+        >
+          <stop offset="0" stopColor="currentColor" />
+          <stop offset="1" stopColor="var(--color-bg-main)" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+export const IconArrowRight = () => {
+  return (
+    <svg
+      className="w-6 h-6 ms-3 -me-0.5"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M18.9168 12.8517H2.70834C2.45967 12.8517 2.25459 12.7709 2.09309 12.6092C1.93142 12.4476 1.85059 12.2445 1.85059 12C1.85059 11.7555 1.93142 11.5524 2.09309 11.3907C2.25459 11.2291 2.45967 11.1482 2.70834 11.1482H18.9108L14.3973 6.64074C14.2275 6.47074 14.1426 6.27082 14.1426 6.04099C14.1426 5.81115 14.2275 5.61124 14.3973 5.44124C14.5673 5.2714 14.7673 5.18749 14.9971 5.18949C15.2269 5.19149 15.4268 5.2774 15.5968 5.44724L21.5528 11.4032C21.6442 11.4946 21.7095 11.5889 21.7488 11.6862C21.788 11.7834 21.8076 11.89 21.8076 12.006C21.8076 12.118 21.788 12.2226 21.7488 12.3197C21.7095 12.4171 21.6442 12.5114 21.5528 12.6027L15.5968 18.5587C15.4268 18.7286 15.2269 18.8145 14.9971 18.8165C14.7673 18.8185 14.5673 18.7326 14.3973 18.5587C14.2275 18.3887 14.1426 18.1898 14.1426 17.962C14.1426 17.734 14.2275 17.5351 14.3973 17.3652L18.9168 12.8517Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
 export default function Home() {
   return (
     <main id="main">
@@ -25,38 +75,26 @@ export default function Home() {
           <div className="selected-projects">
             <div className="section-header flex flex-col lg:flex-row lg:items-center lg:justify-between p-6">
               <h2 className="text-2xl heading uppercase inline-flex items-center">
-                Selected projects whale
+                Selected projects
+                <DiagonalLinesIcon />
               </h2>
               <a
                 href="/"
                 className="button uppercase inline-flex items-center hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium rounded-base text-lg lg:px-4 py-2.5 focus:outline-none"
               >
                 View all projects
-                <svg
-                  className="w-6 h-6 ms-3 -me-0.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M18.9168 12.8517H2.70834C2.45967 12.8517 2.25459 12.7709 2.09309 12.6092C1.93142 12.4476 1.85059 12.2445 1.85059 12C1.85059 11.7555 1.93142 11.5524 2.09309 11.3907C2.25459 11.2291 2.45967 11.1482 2.70834 11.1482H18.9108L14.3973 6.64074C14.2275 6.47074 14.1426 6.27082 14.1426 6.04099C14.1426 5.81115 14.2275 5.61124 14.3973 5.44124C14.5673 5.2714 14.7673 5.18749 14.9971 5.18949C15.2269 5.19149 15.4268 5.2774 15.5968 5.44724L21.5528 11.4032C21.6442 11.4946 21.7095 11.5889 21.7488 11.6862C21.788 11.7834 21.8076 11.89 21.8076 12.006C21.8076 12.118 21.788 12.2226 21.7488 12.3197C21.7095 12.4171 21.6442 12.5114 21.5528 12.6027L15.5968 18.5587C15.4268 18.7286 15.2269 18.8145 14.9971 18.8165C14.7673 18.8185 14.5673 18.7326 14.3973 18.5587C14.2275 18.3887 14.1426 18.1898 14.1426 17.962C14.1426 17.734 14.2275 17.5351 14.3973 17.3652L18.9168 12.8517Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <IconArrowRight />
               </a>
             </div>
             <div className="content-wrapper grid lg:grid-cols-2 xl:grid-cols-3">
               <div className="w-full min-w-sm p-6 border border-(--color-border)">
                 <div className="flex items-center items-start space-x-3 mb-6">
-                  <div className="number text-2xl md:text-5xl">01</div>
+                  <div className="number text-3xl md:text-5xl">01</div>
                   <a href={PROJECT_BOULE_PATH} target="_blank">
-                    <h5 className="text-3xl font-semibold tracking-tight uppercase">
+                    <h5 className="text-2xl lg:text-3xl font-semibold tracking-tight uppercase">
                       Boule Foods
                     </h5>
-                    <p className="subheading text-xl">E-Commerce Website Design</p>
+                    <p className="subheading text-base lg:text-xl">E-Commerce Website Design</p>
                   </a>
                 </div>
                 <div className="relative overflow-hidden">
@@ -81,26 +119,26 @@ export default function Home() {
                     />
                   </a>
                 </div>
-                <div className="flex items-center justify-center mt-[15px] gap-2">
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                <div className="flex flex-wrap items-center justify-center mt-[15px] gap-2">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     UI/UX
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     E-Commerce
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     Web design
                   </span>
                 </div>
               </div>
               <div className="w-full min-w-sm p-6 border border-(--color-border)">
                 <div className="flex items-center items-start space-x-3 mb-6">
-                  <div className="number text-2xl md:text-5xl">02</div>
+                  <div className="number text-3xl md:text-5xl">02</div>
                   <a href={PROJECT_STRIDE_PATH} target="_blank">
-                    <h5 className="text-3xl font-semibold tracking-tight uppercase">
+                    <h5 className="text-2xl lg:text-3xl font-semibold tracking-tight uppercase">
                       Stride Fashion
                     </h5>
-                    <p className="subheading text-xl">E-Commerce Website Design</p>
+                    <p className="subheading text-base lg:text-xl">E-Commerce Website Design</p>
                   </a>
                 </div>
                 <div className="relative overflow-hidden">
@@ -125,26 +163,26 @@ export default function Home() {
                     />
                   </a>
                 </div>
-                <div className="flex items-center justify-center mt-[15px] gap-2">
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                <div className="flex flex-wrap items-center justify-center mt-[15px] gap-2">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     UI/UX
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     E-Commerce
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     Web design
                   </span>
                 </div>
               </div>
               <div className="w-full min-w-sm p-6 border border-(--color-border)">
                 <div className="flex items-center items-start space-x-3 mb-6">
-                  <div className="number text-2xl md:text-5xl">03</div>
+                  <div className="number text-3xl md:text-5xl">03</div>
                   <a href={PROJECT_SOUL_PATH} target="_blank">
-                    <h5 className="text-3xl font-semibold tracking-tight uppercase">
+                    <h5 className="text-2xl lg:text-3xl font-semibold tracking-tight uppercase">
                       Soul Elegant
                     </h5>
-                    <p className="subheading text-xl">E-Commerce Website Design</p>
+                    <p className="subheading text-base lg:text-xl">E-Commerce Website Design</p>
                   </a>
                 </div>
                 <div className="relative overflow-hidden">
@@ -169,14 +207,14 @@ export default function Home() {
                     />
                   </a>
                 </div>
-                <div className="flex items-center justify-center mt-[15px] gap-2">
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                <div className="flex flex-wrap items-center justify-center mt-[15px] gap-2">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     UI/UX
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     E-Commerce
                   </span>
-                  <span className="border text-base font-medium leading-none uppercase px-3.5 py-1.5 rounded">
+                  <span className="border text-sm md:text-base font-medium leading-none uppercase px-2 lg:px-3.5 py-1.5 rounded">
                     Web design
                   </span>
                 </div>
@@ -187,7 +225,8 @@ export default function Home() {
             <div className="process w-full relative overflow-hidden col-span-2">
               <div className="section-header flex items-center justify-between p-6">
                 <h2 className="text-2xl heading uppercase inline-flex items-center">
-                  Work experiences whale
+                  Work experiences
+                  <DiagonalLinesIcon />
                 </h2>
               </div>
               <div className="content-wrapper px-6 pt-1.5 pb-6">
@@ -196,13 +235,13 @@ export default function Home() {
                     <h2 className="text-2xl font-semibold">Halo Ecommerce</h2>
                   </div>
                   <div className="exp-info w-full">
-                    <h5 className="text-2xl font-semibold tracking-tight uppercase mb-2 font-medium flex flex-col md:flex-row md:items-center md:justify-between">
+                    <h5 className="text-xl lg:text-2xl font-semibold tracking-tight uppercase mb-2 font-medium flex flex-col md:flex-row md:items-center md:justify-between gap-[5px]">
                       Shopify Theme Developer / Project Leader
-                      <span className="text-xl font-normal italic">
+                      <span className="text-base lg:text-xl font-normal italic">
                         Jun 2021 - Present
                       </span>
                     </h5>
-                    <ul className="list-disc list-inside text-xl">
+                    <ul className="list-disc list-inside text-base lg:text-xl">
                       <li>
                         Developed and optimized Shopify themes with a strong focus on
                         performance and UX.
@@ -231,13 +270,13 @@ export default function Home() {
                     <h2 className="text-2xl font-semibold">Idgoden Technology</h2>
                   </div>
                   <div className="exp-info w-full">
-                    <h5 className="text-2xl font-semibold tracking-tight uppercase mb-2 font-medium flex flex-col md:flex-row md:items-center md:justify-between">
+                    <h5 className="text-xl lg:text-2xl font-semibold tracking-tight uppercase mb-2 font-medium flex flex-col md:flex-row md:items-center md:justify-between gap-[5px]">
                       Developer
-                      <span className="text-xl font-normal italic">
+                      <span className="text-base lg:text-xl font-normal italic">
                         Jun 2020 - Apr 2021
                       </span>
                     </h5>
-                    <ul className="list-disc list-inside text-xl">
+                    <ul className="list-disc list-inside text-base lg:text-xl">
                       <li>
                         Developed responsive websites using HTML/HTML5,
                         JavaScript/TypeScript, and CSS3/SCSS.
@@ -271,10 +310,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="tools w-full border-l border-(--color-border)">
+            <div className="tools w-full max-xl:border-t xl:border-l border-(--color-border)">
               <div className="section-header flex items-center justify-between p-6">
                 <h2 className="text-2xl font-medium heading uppercase inline-flex items-center">
-                  Tools I use whale
+                  Tools I use
+                  <DiagonalLinesIcon />
                 </h2>
               </div>
               <div className="content-wrapper grid grid-cols-2 px-6 pt-1.5 pb-6 gap-[10px] md:gap-[20px]">
@@ -287,7 +327,7 @@ export default function Home() {
                     alt="Figma"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Figma</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Figma</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -299,7 +339,7 @@ export default function Home() {
                     alt="Photoshop"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Photoshop</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Photoshop</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -311,7 +351,7 @@ export default function Home() {
                     alt="Claude AI"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Claude AI</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Claude AI</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -323,7 +363,7 @@ export default function Home() {
                     alt="Cursor AI"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Cursor AI</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Cursor AI</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -335,7 +375,7 @@ export default function Home() {
                     alt="OpenAI GPT-5.5"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">OpenAI GPT-5.5</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">OpenAI GPT-5.5</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -347,7 +387,7 @@ export default function Home() {
                     alt="Google Gemini"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Google Gemini</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Google Gemini</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -359,7 +399,7 @@ export default function Home() {
                     alt="Antigravity"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Antigravity</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Antigravity</h5>
                   </div>
                 </div>
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
@@ -371,7 +411,7 @@ export default function Home() {
                     alt="Shopify"
                   />
                   <div className="flex flex-col justify-between">
-                    <h5 className="text-xl tracking-tight">Shopify</h5>
+                    <h5 className="text-md lg:text-xl tracking-tight">Shopify</h5>
                   </div>
                 </div>
               </div>
@@ -381,7 +421,8 @@ export default function Home() {
             <div className="skill-language">
               <div className="section-header flex items-center justify-between p-6">
                 <h2 className="text-2xl heading uppercase inline-flex items-center">
-                  Skill &amp; Languages whale
+                  Skill &amp; Languages
+                  <DiagonalLinesIcon />
                 </h2>
               </div>
               <div className="content-wrapper px-6 pt-1.5 pb-6">
@@ -395,10 +436,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="education-level border-l border-(--color-border)">
+            <div className="education-level md:border-l border-(--color-border)">
               <div className="section-header flex items-center justify-between p-6">
                 <h2 className="text-2xl heading uppercase inline-flex items-center">
-                  Education level whale
+                  Education level
+                  <DiagonalLinesIcon />
                 </h2>
               </div>
               <div className="content-wrapper px-6 pt-1.5 pb-6">
@@ -432,7 +474,7 @@ export default function Home() {
                 Have a project in mind? I'd love to help bring your vision to life.
               </p>
             </div>
-            <div className="social-item max-lg:col-span-2 border-l border-(--color-border) p-6">
+            <div className="social-item max-lg:col-span-2 lg:border-l border-(--color-border) p-6">
               <div className="flex items-center gap-2.5 mb-3">
                 <svg
                   className="mail-icon w-8 h-8"
@@ -492,7 +534,8 @@ export default function Home() {
             <div className="social-item max-lg:col-span-2 max-lg:border-t lg:border-l border-(--color-border) max-lg:flex  max-lg:items-center max-lg:justify-between max-md:flex-col max-md:items-start">
               <div className="section-header flex items-center justify-between p-6">
                 <h2 className="text-2xl heading uppercase inline-flex items-center">
-                  Education level whale
+                  Education level
+                  <DiagonalLinesIcon />
                 </h2>
               </div>
               <div className="flex sm:justify-start rtl:space-x-reverse px-6 max-md:pb-6">

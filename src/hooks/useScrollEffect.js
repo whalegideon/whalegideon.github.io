@@ -6,7 +6,7 @@ export function useScrollEffect({ blockRef, bannerSubRef, bannerHeadingRef, bann
     const bannerSub = bannerSubRef.current;
     const bannerHeading = bannerHeadingRef.current;
     const bannerDesc = bannerDescRef.current;
-    // const main = mainRef.current;
+    const main = mainRef.current;
 
     if (!block) return;
 

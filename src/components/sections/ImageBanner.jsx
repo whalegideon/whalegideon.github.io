@@ -18,13 +18,15 @@ export default function ImageBanner({logoPNG, logoPNGTablet, avatar, avatarTable
   const bannerHeadingRef = useRef(null);
   const bannerSub = useRef(null);
   const bannerDescRef = useRef(null);
+  const mainRef = useRef(null);
 
   useScrollEffect({
     blockRef,
     bannerSubRef,
     bannerHeadingRef,
     bannerSub,
-    bannerDescRef
+    bannerDescRef,
+    mainRef
   });
 
   return (
@@ -42,7 +44,7 @@ export default function ImageBanner({logoPNG, logoPNGTablet, avatar, avatarTable
       )}
 
       <div className="content-wrapper container-custom">
-        <div ref={bannerHeadingRef} className="name flex flex-col justify-end">
+        <div ref={bannerHeadingRef} className="name flex flex-col justify-end max-lg:mb-6">
           {heading && (
             <h1 className="heading uppercase text-4xl lg:text-7xl xl:text-9xl">{heading}</h1>
           )}
@@ -51,7 +53,7 @@ export default function ImageBanner({logoPNG, logoPNGTablet, avatar, avatarTable
           )}
         </div>
         {description && (
-          <p ref={bannerDescRef} className="description text-xl lg:text-2xl xl:text-3xl lg:leading-3xl">{description}</p>
+          <p ref={bannerDescRef} className="description text-base lg:text-2xl xl:text-3xl lg:leading-3xl">{description}</p>
         )}
       </div>
     </section>
