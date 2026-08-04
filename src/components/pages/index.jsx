@@ -6,11 +6,10 @@ export default function Home() {
   return (
     <main id="main">
       <ImageBanner
-        logoPNG="../public/img/logo.png"
-        logoPNG="../public/img/logo.png"
-        logoPNGTablet="../public/img/logo-tablet.png"
-        avatar="../public/img/avatar-blur.png"
-        avatarTablet="../public/img/avatar-blur-tablet.png"
+        logoPNG="/img/logo.png"
+        logoPNGTablet="/img/logo-tablet.png"
+        avatar="/img/avatar-blur.png"
+        avatarTablet="/img/avatar-blur-tablet.png"
         heading="Le gia huy"
         subheading="Front-end developer"
         description="Front-End Developer with 4 years of experience building and optimizing
@@ -68,10 +67,10 @@ export default function Home() {
                   >
                     <img
                       className="rounded-base"
-                      src="../public/img/project/project_4.webp"
+                      src="/img/project/project_4.webp"
                       srcSet="
-                    ../public/img/project/project_tablet_4.jpg 768w,
-                    ../public/img/project/project_4.webp 1200w
+                    /img/project/project_tablet_4.jpg 768w,
+                    /img/project/project_4.webp 1200w
                   "
                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 1200px"
                       width={1200}
@@ -112,10 +111,10 @@ export default function Home() {
                   >
                     <img
                       className="rounded-base"
-                      src="../public/img/project/project_3.webp"
+                      src="/img/project/project_3.webp"
                       srcSet="
-                    ../public/img/project/project_tablet_3.jpg 768w,
-                    ../public/img/project/project_3.webp 1200w
+                    /img/project/project_tablet_3.jpg 768w,
+                    /img/project/project_3.webp 1200w
                   "
                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 1200px"
                       width={1200}
@@ -156,10 +155,10 @@ export default function Home() {
                   >
                     <img
                       className="rounded-base"
-                      src="../public/img/project/project_1.webp"
+                      src="/img/project/project_1.webp"
                       srcSet="
-                    ../public/img/project/project_tablet_1.jpg 768w,
-                    ../public/img/project/project_1.webp 1200w
+                    /img/project/project_tablet_1.jpg 768w,
+                    /img/project/project_1.webp 1200w
                   "
                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 1200px"
                       width={1200}
@@ -282,7 +281,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-figma.png"
+                    src="/img/tools/logo-figma.png"
                     loading="lazy"
                     decoding="async"
                     alt="Figma"
@@ -294,7 +293,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-pts.png"
+                    src="/img/tools/logo-pts.png"
                     loading="lazy"
                     decoding="async"
                     alt="Photoshop"
@@ -306,7 +305,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-claude.png"
+                    src="/img/tools/logo-claude.png"
                     loading="lazy"
                     decoding="async"
                     alt="Claude AI"
@@ -318,7 +317,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-cursor.png"
+                    src="/img/tools/logo-cursor.png"
                     loading="lazy"
                     decoding="async"
                     alt="Cursor AI"
@@ -330,7 +329,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-openai.png"
+                    src="/img/tools/logo-openai.png"
                     loading="lazy"
                     decoding="async"
                     alt="OpenAI GPT-5.5"
@@ -342,7 +341,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-gemini.png"
+                    src="/img/tools/logo-gemini.png"
                     loading="lazy"
                     decoding="async"
                     alt="Google Gemini"
@@ -354,7 +353,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-antigravity.png"
+                    src="/img/tools/logo-antigravity.png"
                     loading="lazy"
                     decoding="async"
                     alt="Antigravity"
@@ -366,7 +365,7 @@ export default function Home() {
                 <div className="tool-item flex items-center py-2.5 px-5 border rounded shadow-xs flex-row max-w-xl gap-[10px] md:gap-[15px]">
                   <img
                     className="object-cover rounded-base h-auto w-8 h-8"
-                    src="../public/img/tools/logo-shopify.png"
+                    src="/img/tools/logo-shopify.png"
                     loading="lazy"
                     decoding="async"
                     alt="Shopify"
